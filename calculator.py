@@ -25,10 +25,12 @@ def div(a,b):
         return a / b
 
 def log(a,b):
-    if a < 0 and a == 1:
+    if b < 0 and b == 1:
         raise ValueError
     else:
         return math.log(a,b)
 
 def exp(a,b):
     return a ** b
+
+print(log(5,1))
