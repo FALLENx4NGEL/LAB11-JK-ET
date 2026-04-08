@@ -5,7 +5,7 @@ calculator.py
 One function per operation, in order.
 """
 
-#sharkbait hon hon hon
+#sharkbait hon hon ho
 
 import math
 
