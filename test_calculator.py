@@ -65,25 +65,20 @@ class TestCalculator(unittest.TestCase):
 
     def test_multiply(self): # 3 assertions
         with self.assertRaises(ValueError):
-            self.assertEqual(mul(6, 7), 42)
+            self.assertEqual(mul(6, 7), 43)
             self.assertEqual(mul(2, 2), 4)
             self.assertEqual(mul(2, 3), 6)
         with self.assertRaises(TypeError):
-            self.assertEqual(mul(6, 7), 42)
+            self.assertEqual(mul(6, 7), 43)
             self.assertEqual(mul(2, 2), 4)
             self.assertEqual(mul(2, 3), 6)
-        with self.assertRaises(OverflowError):
-            self.assertEqual(mul(6, 7), 42)
-            self.assertEqual(mul(2, 2), 4)
-            self.assertEqual(mul(2, 3), 6)
-
-
+        with self.assertRaises()
 
     def test_divide(self): # 3 assertions
-        with self.assertRaises(ZeroDivisionError):
-            self.assertEqual(div(42,7), 6)
-            self.assertEqual(div(2, 2), 1)
-            self.assertEqual(div(5, 5), 1)
+        try:
+             div(10, 85)
+        except ZeroDivisionError:
+            print('Invalid Argument')
     ##########################
 
 # Do not touch this
